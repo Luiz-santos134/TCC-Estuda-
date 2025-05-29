@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83da9facc2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="parte1">
+            <div class="menuBars" onclick="abrirMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+
+            <p>Estuda <span>+</span></p>
+        </div>
+
+        <nav>
+            <ul>
+                <li>Início</li>
+                <li title="Tarefas"><i class="fa-solid fa-clipboard-list"></i></li>
+                <li title="Hábitos"><i class="fa-solid fa-rotate"></i></li>
+                <li title="Anotações"><i class="fa-solid fa-pen-to-square"></i></li>
+                <li title="Perfil"><i class="fa-solid fa-user"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <div class="menu">
+            <div class="menuContainer">
+                <div class="menuItem" id="add" onclick="abrirModal()" title="Adicionar Imagem">
+                    <i class="fa fa-circle-plus"></i>
+                    <a href=""></a>
+                </div>
+                <div class="menuItem" id="home" title="Início">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"></a>
+                </div>
+                <div class="menuItem" id="favoritos" title="Favoritos">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="#"></a>
+                </div>
+                <div class="menuItem" id="configuracoes" title="Configurações">
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="tarefas-pendentes">
+            <p>Tarefas Pendentes</p>
+        </div>
+
+        <div class="habitos-hoje">
+            <p>Hábitos Hoje</p>
+        </div>
+
+        <div class="frase-motivacional">O sucesso é resultado de preparação e sabedoria</div>
+
+        <div class="interesses">
+            <div class="interesse">
+                <i class="fa-solid fa-volleyball"></i>
+                <p>Volleyball</p>
+            </div>
+            <div class="interesse">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>Programação</p>
+            </div>
+            <div class="interesse">
+                <i class="fa-solid fa-gamepad"></i>
+                <p>Games</p>
+            </div>
+            <div class="interesse">
+                <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+                <p>Table Tennis</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

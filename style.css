@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --corpo: #f0f0f0;
+    --destaque: rgb(48, 48, 48);
+    --GrayHover: #5e5e5ea8;
+}
+
+body {
+    background-color: var(--corpo);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--corpo);
+    display: flex;
+    justify-content: space-between;
+    /* controla o "respiro" lateral */
+    flex-direction: row;
+    height: 8dvh;
+    align-items: center;
+}
+
+header p {
+    font-size: 17pt;
+    font-weight: 700;
+    margin-left: 62px;
+}
+
+.parte1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 120px;
+}
+
+ul li {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+ul li:hover {
+    background-color: gray;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+span {
+    color: red;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 81.5vw;
+    margin: 0 auto;
+}
+
+.tarefas-pendentes,
+.habitos-hoje,
+.frase-motivacional {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    color: white;
+    font-size: 17pt;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.tarefas-pendentes {
+    background-color: rgb(74, 85, 247);
+    width: 40vw;
+    height: 40dvh;
+    padding-top: 20px;
+}
+
+.habitos-hoje {
+    background-color: red;
+    width: 40vw;
+    height: 40dvh;
+    padding-top: 20px;
+}
+
+.frase-motivacional {
+    background-color: var(--destaque);
+    width: 100%;
+    height: 25dvh;
+    align-items: center;
+    font-size: 25pt;
+}
+
+.interesses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: rgb(5, 5, 5);
+    font-size: 15pt;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 100%;
+    height: 30dvh;
+}
+
+.interesses div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+}
+
+.menuBars {
+    background-color: transparent;
+    border-radius: 1vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.menuBars:hover {
+    cursor: pointer;
+    background-color: var(--GrayHover);
+}
+
+.menu {
+    position: fixed;
+    background-color: var(--destaque);
+    width: 3.5vw;
+    height: calc(100vh - 15vh);
+    /* altura total menos o deslocamento */
+    top: 10vh;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 2vh;
+    font-size: 2vh;
+}
+
+.menuItem i {
+    width: 2.5vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Branco);
+    font-size: 2.5vh;
+}
+
+.menuItem i:hover {
+    transition: .3s ease;
+    cursor: pointer;
+    background-color: var(--GrayHover);
+    border-radius: 1vh;
+}
+
+@media (max-width: 768px) {
+    header p {
+        font-size: 14pt;
+        margin-left: 0px;
+    }
+
+    ul {
+        margin-right: 55px;
+    }
+
+    .menu {
+        width: 7vw;
+    }
+
+    .menuItem i {
+        width: 3vw;
+        height: 6vh;
+        font-size: 2.5vh;
+        padding: 20px;
+    }
+
+    .menuItem i:hover {
+        transition: .3s ease;
+        cursor: pointer;
+        background-color: var(--GrayHover);
+        border-radius: 1vh;
+    }
+
+    main {
+        gap: 10px;
+    }
+
+    .tarefas-pendentes,
+    .habitos-hoje {
+        width: 40vw;
+    }
+
+    .frase-motivacional {
+        text-align: center;
+        align-items: center;
+        font-style: italic;
+        font-family: cursive;
+    }
+
+    .interesses {
+        font-size: 11pt;
+        flex-wrap: nowrap;
+        gap: 0px;
+    }
+
+    .interesses div {
+        gap: 2px;
+    }
+}
