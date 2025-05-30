@@ -20,3 +20,17 @@ function abrirMenu() {
         }, 500); // Espera a animação acabar para esconder
     }
 }
+
+function gerarFrase() {
+    const frases = [
+        "A vida é uma aventura ousada ou não é nada.",
+        "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+        "A felicidade não é algo pronto. Ela vem de suas próprias ações.",
+        "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+        "A vida é 10% o que acontece conosco e 90% como reagimos a isso."
+    ];
+
+    document.querySelector('.frase-motivacional').innerText = frases[Math.floor(Math.random() * frases.length)];
+}
+
+gerarFrase();
