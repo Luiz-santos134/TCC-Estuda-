@@ -1,5 +1,5 @@
 🎓 Portal do Aluno - TCC
-Bem-vindo ao repositório oficial do Portal do Aluno, projeto desenvolvido como Trabalho de Conclusão de Curso (TCC). Este sistema visa oferecer aos alunos uma plataforma digital intuitiva para organização pessoal, acompanhamento de hábitos e motivação no dia a dia escolar.
+Bem-vindo ao repositório oficial do Portal do Aluno, projeto desenvolvido como Trabalho de Conclusão de Curso (TCC). Este sistema visa oferecer aos alunos uma plataforma digital intuitiva para organização pessoal, acompanhamento de hábitos e motivação no dia a dia escolar e geração de simulados com o acompanhamente de uma Inteligência Artificial (IA).
 
 📋 Descrição
 O Portal do Aluno é uma aplicação web focada em:
