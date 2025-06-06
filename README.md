@@ -14,6 +14,10 @@ O Portal do Aluno é uma aplicação web focada em:
 
 ✅ Interface moderna, minimalista e responsiva.
 
+✅ Criação de Simulados.
+
+✅ IA para auxiliar nos estudos
+
 Este sistema não depende de dados institucionais (como boletins ou notas), e sim foca na autogestão do estudante.
 
 🛠️ Tecnologias utilizadas
